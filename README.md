@@ -13,14 +13,11 @@ Personal agent skills for use with the [skills CLI](https://github.com/vercel-la
 ## Usage
 
 ```bash
-# Install all skills globally to all agents
-skills add -g xixiaofinland/agent-skills --all -y
+# Install all skills globally (Claude Code, Pi, OpenCode)
+skills add -g xixiaofinland/agent-skills -a claude-code pi opencode -y
 
 # Install a specific skill
-skills add -g xixiaofinland/agent-skills --skill plan-first -y
-
-# Install to specific agents only
-skills add -g xixiaofinland/agent-skills --skill plan-first -a claude-code pi -y
+skills add -g xixiaofinland/agent-skills --skill plan-first -a claude-code pi opencode -y
 
 # List installed global skills
 skills ls -g
