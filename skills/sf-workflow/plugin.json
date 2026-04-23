@@ -1,0 +1,10 @@
+{
+  "name": "salesforce-development",
+  "displayName": "Salesforce Development",
+  "description": "Salesforce development skill: sf CLI workflows for deploy/retrieve, Apex tests, metadata management, and org operations.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/xixiaofinland/sf-workflow",
+  "keywords": ["salesforce", "apex", "sf-cli", "lwc", "metadata"],
+  "skills": "./"
+}
