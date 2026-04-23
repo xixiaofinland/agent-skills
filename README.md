@@ -4,11 +4,12 @@ Personal agent skills for use with the [skills CLI](https://github.com/vercel-la
 
 ## Skills
 
-| Skill         | Description                                                                                                                            |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `plan-first`  | Structured planning workflow — analyzes project, asks clarifying questions, creates TODO.md, gets approval, then executes task by task |
-| `clean-apex`  | Clean-code guidance for Apex: naming, 3-tier architecture, error handling, unit vs integration testing                                 |
-| `sf-workflow` | Salesforce development tasks using the modern `sf` CLI — deploy, retrieve, test, org management                                        |
+| Skill         | Description                                                                                                                                |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `plan-first`  | Structured planning workflow — analyzes project, asks clarifying questions, creates TODO.md, gets approval, then executes task by task     |
+| `clean-apex`  | Clean-code guidance for Apex: naming, 3-tier architecture, error handling, unit vs integration testing                                     |
+| `sf-workflow` | Salesforce development tasks using the modern `sf` CLI — deploy, retrieve, test, org management                                            |
+| `book-tutor`  | Socratic tutor for any book or course — guided questioning, comprehension checks, chapter-by-chapter progress tracking, vault note capture |
 
 ## Usage
 
