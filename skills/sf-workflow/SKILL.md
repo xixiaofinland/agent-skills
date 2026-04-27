@@ -72,6 +72,27 @@ The standard package directory is `force-app/main/default/`. Read `sfdx-project.
 }
 ```
 
+## Pre-Implementation Formatter Check
+
+Before starting any implementation, verify the Apex formatter toolchain is working.
+
+**1. Confirm `.prettierrc` exists at the project root:**
+
+```bash
+ls .prettierrc
+```
+
+If it is missing, stop and inform the user — prettier will silently fall back to defaults and Apex formatting cannot be trusted.
+
+**2. Confirm prettier and the apex plugin load correctly** with a fast, non-destructive stdin smoke test:
+
+```bash
+echo "public class _Check {}" | npx prettier --stdin-filepath _Check.cls --plugin=prettier-plugin-apex
+```
+
+- If it exits 0 and prints formatted output, the toolchain is confirmed. Proceed.
+- If it fails, stop and report the error to the user before writing any code. Common causes: `node_modules` not installed (`npm install`), `.prettierrc` missing from the project root, or `prettier-plugin-apex` not declared in `package.json`.
+
 ## Target Org
 
 **Before any deploy, retrieve, or test operation, resolve the target org and always pass it explicitly as `-o <alias>` in every command.** This makes every command unambiguous and human-readable — never rely on implicit org resolution.
